@@ -1,0 +1,25 @@
+{
+    "Penjelasan_dari_Data_Laporan_Keuangan": {
+      "Total_Pendapatan": "INTP mencatat total pendapatan sebesar 4.08 T IDR pada kuartal terakhir, mengalami penurunan sebesar 18.71% dibandingkan dengan kuartal sebelumnya. Pendapatan bersih untuk kuartal pertama tahun 2024 adalah 238.03 B IDR.",
+      "Pertumbuhan_Pendapatan": "Pendapatan menunjukkan tren penurunan pada kuartal terakhir, yang mengindikasikan tantangan dalam kinerja operasional."
+    },
+    "Penjelasan_dari_Data_Statistik_dan_Rasio_Keuangan": {
+      "Market_Capitalization": "Kapitalisasi pasar perusahaan tidak disebutkan secara eksplisit dalam data yang tersedia.",
+      "Price_Earnings_Ratio": "Rasio harga terhadap pendapatan (P/E) saat ini adalah 13.79, menunjukkan valuasi saham yang relatif stabil.",
+      "Return_on_Assets": "ROA sebesar 6.70% menunjukkan bahwa INTP efektif dalam menghasilkan keuntungan dari asetnya.",
+      "Return_on_Equity": "ROE sebesar 8.83% mengindikasikan bahwa INTP mampu memberikan pengembalian yang moderat kepada pemegang saham dari ekuitas yang dimiliki.",
+      "Debt_to_Equity_Ratio": "Rasio hutang terhadap ekuitas sebesar 0.13 menunjukkan bahwa INTP memiliki struktur permodalan yang cukup konservatif dengan tingkat hutang yang rendah."
+    },
+    "Penjelasan_dari_Data_Dividen_Keuangan": {
+      "Dividen_Terakhir": "Dividen terakhir yang diumumkan adalah sebesar 90.00 IDR per saham, dengan hasil dividen (TTM) sebesar 1.17%.",
+      "Sejarah_Dividen": "Dividen per saham (FY) sebelumnya adalah 160.00 IDR pada tahun 2023, 500.00 IDR pada tahun 2022, dan 500.00 IDR pada tahun 2021."
+    },
+    "Penjelasan_dari_Data_Pendapatan_Keuangan": {
+      "Earnings_Per_Share": "EPS untuk Q1 2024 adalah 90.17 IDR, dengan estimasi untuk Q2 2024 sebesar 83.77 IDR, menunjukkan penurunan profitabilitas per saham yang diharapkan.",
+      "Total_Revenue": "Total pendapatan untuk Q1 2024 adalah 4.08 T IDR, dengan estimasi pendapatan untuk Q2 2024 sebesar 3.86 T IDR, yang mengindikasikan penurunan pendapatan yang diharapkan."
+    },
+    "Apakah_Saham_Ini_Direkomendasikan": {
+      "Rekomendasi": "Tidak",
+      "Alasan": "INTP menunjukkan penurunan pendapatan dan profitabilitas yang diharapkan untuk kuartal berikutnya, serta penurunan dalam rasio keuangan lainnya. Dengan demikian, saham ini mungkin tidak direkomendasikan sebagai pilihan investasi yang baik pada saat ini."
+    }
+}

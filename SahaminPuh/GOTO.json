@@ -1,0 +1,24 @@
+{
+    "Penjelasan_dari_Data_Laporan_Keuangan": {
+        "Total_Pendapatan": "GOTO mencatat total pendapatan sebesar 4.08 T IDR pada kuartal terakhir, mengalami penurunan sebesar 4.57% dibandingkan dengan kuartal sebelumnya. Pendapatan bersih untuk kuartal pertama tahun 2024 adalah -861.91 B IDR.",
+        "Pertumbuhan_Pendapatan": "Pendapatan menunjukkan tren peningkatan dari tahun ke tahun meskipun ada penurunan kecil pada kuartal terakhir, mencerminkan kinerja operasional yang berkembang."
+    },
+    "Penjelasan_dari_Data_Statistik_dan_Rasio_Keuangan": {
+        "Market_Capitalization": "Dengan kapitalisasi pasar sebesar 41.22 T IDR, GOTO tetap menjadi pemain signifikan di pasar saham Indonesia.",
+        "Price_Earnings_Ratio": "Tidak tersedia karena perusahaan mencatat kerugian.",
+        "Return_on_Assets": "ROA sebesar -95.15% menunjukkan bahwa GOTO masih belum efektif dalam menghasilkan keuntungan dari asetnya.",
+        "Return_on_Equity": "ROE sebesar -109.22% mengindikasikan bahwa GOTO mengalami kerugian signifikan.",
+        "Debt_to_Equity_Ratio": "Rasio hutang terhadap ekuitas sebesar 0.11 menunjukkan bahwa GOTO memiliki tingkat hutang yang rendah dibandingkan dengan ekuitasnya."
+    },
+    "Penjelasan_dari_Data_Dividen_Keuangan": {
+        "Dividen_Terakhir": "GOTO tidak membayar dividen. Perusahaan belum pernah membayar dividen sebelumnya dan saat ini tidak ada informasi mengenai apakah akan membayar dividen di masa depan."
+    },
+    "Penjelasan_dari_Data_Pendapatan_Keuangan": {
+        "Earnings_Per_Share": "EPS untuk Q1 2024 adalah -0.80 IDR, dengan estimasi untuk Q2 2024 sebesar -0.46 IDR. Hal ini menunjukkan bahwa perusahaan masih mengalami kerugian per saham.",
+        "Total_Revenue": "Total pendapatan untuk tahun 2023 adalah 14.79 T IDR, dengan kontribusi terbesar berasal dari sektor E-Commerce."
+    },
+    "Apakah_Saham_Ini_Direkomendasikan": {
+        "Rekomendasi": "Tidak",
+        "Alasan": "Meskipun GOTO menunjukkan pertumbuhan pendapatan yang signifikan, perusahaan masih mencatat kerugian yang besar dan rasio keuangan yang negatif. Dengan demikian, saham ini tidak direkomendasikan sebagai pilihan investasi saat ini."
+    }
+}

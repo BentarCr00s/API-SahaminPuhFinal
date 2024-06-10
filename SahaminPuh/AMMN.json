@@ -1,0 +1,24 @@
+{
+    "Penjelasan_dari_Data_Laporan_Keuangan": {
+        "Total_Pendapatan": "AMMN mencatat total pendapatan sebesar 9.42 T IDR pada kuartal terakhir, mengalami penurunan sebesar 31.70% dibandingkan dengan kuartal sebelumnya. Pendapatan bersih untuk kuartal pertama tahun 2024 adalah 2.02 T IDR.",
+        "Pertumbuhan_Pendapatan": "Pendapatan menunjukkan tren penurunan yang signifikan pada kuartal terakhir, mencerminkan tantangan dalam kinerja operasional."
+    },
+    "Penjelasan_dari_Data_Statistik_dan_Rasio_Keuangan": {
+        "Market_Capitalization": "Dengan kapitalisasi pasar sebesar 878.34 T IDR, AMMN adalah salah satu perusahaan besar di pasar saham Indonesia.",
+        "Price_Earnings_Ratio": "Tidak tersedia karena perusahaan tidak membayar dividen.",
+        "Return_on_Assets": "ROA tidak tersedia.",
+        "Return_on_Equity": "ROE tidak tersedia.",
+        "Debt_to_Equity_Ratio": "Rasio hutang terhadap ekuitas sebesar 0.80 menunjukkan bahwa AMMN memiliki tingkat hutang yang cukup tinggi dibandingkan dengan ekuitasnya."
+    },
+    "Penjelasan_dari_Data_Dividen_Keuangan": {
+        "Dividen_Terakhir": "AMMN tidak membayar dividen. Perusahaan belum pernah membayar dividen sebelumnya dan saat ini tidak ada informasi mengenai apakah akan membayar dividen di masa depan."
+    },
+    "Penjelasan_dari_Data_Pendapatan_Keuangan": {
+        "Earnings_Per_Share": "EPS untuk Q1 2024 adalah 27.86 IDR, menunjukkan penurunan profitabilitas per saham dibandingkan dengan kuartal sebelumnya.",
+        "Total_Revenue": "Total pendapatan untuk tahun 2023 adalah 30.97 T IDR, dengan kontribusi terbesar berasal dari sektor Copper dan Gold."
+    },
+    "Apakah_Saham_Ini_Direkomendasikan": {
+        "Rekomendasi": "Tidak",
+        "Alasan": "Meskipun AMMN memiliki kapitalisasi pasar yang besar, perusahaan mengalami penurunan pendapatan yang signifikan dan memiliki rasio hutang terhadap ekuitas yang tinggi. Dengan demikian, saham ini tidak direkomendasikan sebagai pilihan investasi saat ini."
+    }
+}
