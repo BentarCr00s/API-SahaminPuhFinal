@@ -10,7 +10,6 @@ const port = 3000;
 app.use(express.json()); // Add this line to parse JSON bodies
 
 // Main URL of the news page
-
 app.get('/news', async (req, res) => {
     try {
         const url = 'https://market.bisnis.com/bursa-saham';
@@ -33,13 +32,20 @@ app.get('/news', async (req, res) => {
         }).get();
         
         const newsData = await Promise.all(newsPromises);
-        res.json(newsData);
+
+        // Remove duplicate data
+        const uniqueNewsData = newsData.filter((value, index, self) =>
+            index === self.findIndex((t) => (
+                t.title === value.title && t.date === value.date && t.imageUrl === value.imageUrl && t.content === value.content
+            ))
+        );
+
+        res.json(uniqueNewsData);
     } catch (error) {
         console.error('Error:', error);
         res.status(500).json({ error: 'An error occurred' });
     }
 });
-
 // Add a new GET endpoint to open all data at @SahaminPuh
 app.get('/saham-puh', async (req, res) => {
     try {
