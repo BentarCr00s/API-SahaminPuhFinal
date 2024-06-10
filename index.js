@@ -7,78 +7,36 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+app.use(express.json()); // Add this line to parse JSON bodies
+
 // Main URL of the news page
-const url = 'https://www.idxchannel.com/market-news';
 
-// Function to fetch and scrape individual article data
-async function fetchArticleData(articleUrl) {
-    try {
-        const { data } = await axios.get(articleUrl);
-        const $ = cheerio.load(data);
-        const title = $('.article--title.mb-20').text().trim();
-        const imgSrc = $('.article--image.mb-40 img').attr('src');
-        const content = $('.content').text().trim();
-        // Check for "text color:" in the content
-        if (content.includes('color:')) {
-            return null;
-        }
-        return {
-            title: title,
-            imgSrc: imgSrc,
-            content: content,
-            link: articleUrl
-        };
-    } catch (error) {
-        console.error(`Error fetching article data: ${error.message}`);
-        return null;
-    }
-}
-
-// Endpoint to fetch individual article data
-app.post('/article', async (req, res) => {
-    const articleUrl = req.body.url;
-    if (!articleUrl) {
-        return res.status(400).json({ error: 'URL Artikel diperlukan' });
-    }
-
-    const articleData = await fetchArticleData(articleUrl);
-    if (!articleData) {
-        return res.status(404).json({ error: 'Artikel tidak ditemukan atau mengandung konten terlarang' });
-    }
-
-    res.json(articleData);
-});
-// Endpoint to scrape data from the main news page
 app.get('/news', async (req, res) => {
     try {
-        const { data } = await axios.get(url);
-        const $ = cheerio.load(data);
-
-        const articleLinks = [];
-
-        // Find all articles and get their links
-        $('div.bt-con a.thumbnail-tab--md-link').each((index, element) => {
-            const articleLink = $(element).attr('href');
-            if (articleLink) {
-                articleLinks.push(articleLink);
-            }
-        });
-
-        // Initialize an array to store the detailed news data
-        const detailedNewsData = [];
-
-        // Fetch and scrape each article's data
-        for (const articleLink of articleLinks) {
-            const articleData = await fetchArticleData(articleLink);
-            if (articleData) {
-                detailedNewsData.push(articleData);
-            }
-        }
-
-        res.json(detailedNewsData);
+        const url = 'https://market.bisnis.com/bursa-saham';
+        const response = await axios.get(url);
+        const $ = cheerio.load(response.data);
+        
+        const result = [];
+        
+        const newsPromises = $('.art--row a').map(async (index, element) => {
+            const newsUrl = $(element).attr('href');
+            const newsResponse = await axios.get(newsUrl);
+            const newsHtml = cheerio.load(newsResponse.data);
+            
+            const title = newsHtml('.detailsTitleCaption').text();
+            const date = newsHtml('.detailsAttributeDates').text().replace(/\s/g, '');
+            const imageUrl = newsHtml('.detailsCoverImg.artImg a').attr('href');
+            const content = newsHtml('.detailsContent.force-17.mt40 p').text();
+            
+            return { title, date, imageUrl, content };
+        }).get();
+        
+        const newsData = await Promise.all(newsPromises);
+        res.json(newsData);
     } catch (error) {
-        console.error(`Error fetching main page data: ${error.message}`);
-        res.status(500).json({ error: 'Internal server error' });
+        console.error('Error:', error);
+        res.status(500).json({ error: 'An error occurred' });
     }
 });
 
