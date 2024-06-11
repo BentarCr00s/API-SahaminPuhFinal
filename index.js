@@ -25,16 +25,9 @@ app.get("/news", async (req, res) => {
         const newsHtml = cheerio.load(newsResponse.data);
 
         const title = newsHtml(".detailsTitleCaption").text();
-        let dateText = newsHtml(".detailsAttributeDates")
+        const date = newsHtml(".detailsAttributeDates")
           .text()
           .replace(/\s/g, "");
-        const dateParts = dateText.split("|");
-        const date = new Date(
-          dateParts[0].replace(/(\w+),(\d+)(\w+)(\d+)/, "$4-$3-$2T") +
-            dateParts[1] +
-            ":00Z"
-        );
-        const formattedDate = date.toISOString().slice(0, 19).replace("T", " ");
         const imageUrl = newsHtml(".detailsCoverImg.artImg a").attr("href");
         const content = newsHtml(".detailsContent.force-17.mt40 p").text();
 
